@@ -1,4 +1,4 @@
-##Unsupervised Market Segmentation of European Airbnb Listings
+Unsupervised Market Segmentation of European Airbnb Listings
 
 The goal of this project is to identify and analyze distinct segments of Airbnb listings across several major European cities. While the original problem focused on predicting price (a supervised task), a deeper understanding of the market can be achieved by first identifying what kind of listings exist. For example, are there common patterns that define "budget solo-traveler rooms" versus "spacious family apartments" or "business-ready central flats"?
 
