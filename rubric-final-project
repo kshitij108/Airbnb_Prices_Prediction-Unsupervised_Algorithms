@@ -1,0 +1,487 @@
+Peer-graded Assignment: CSCA 5632 Unsupervised Algorithms in Machine Learning Final Project
+Reviews	3 left to complete
+Information:
+Links or files from other learners aren't verified for security by Coursera. If a file appears suspicious, use your preferred antivirus software before opening.
+Your fellow learner has submitted their assignment anonymously and your review will be anonymous to them. All names are still visible to course instructors.
+Spotify Clustering Analysis
+by Anonymous Learner
+October 1, 2025
+Prompt
+Submit Deliverable One: Jupyter Notebook or PDF Report
+
+The Jupyter notebook should show a brief problem description, EDA procedure, analysis (model building and training), results, and discussion/conclusion. If your work doesn't fit into one notebook (or you think it will be less readable by having one large notebook), make several notebooks or scripts in the GitHub repository (as deliverable 3) and submit a report-style notebook or pdf instead.
+
+If your project doesn't fit into jupyter notebook format (E.g. you built an app that uses ML), write your approach as a report and submit it in a pdf form.
+
+spotify_clustering_analysis_report.pdf
+Rubric
+Project Topic 
+
+Is there a clear explanation of what this project is about? Does it state clearly which type of problem?  E.g. type of learning and type of the task.
+
+
+
+3 points
+Gives a clear explanation of what the project is about and clearly states both the type of learning/algorithms and type of task.
+
+
+2 points
+Provides two of the following:  explanation of what the project is about or  states the type of learning/algorithms or  states the type of task
+
+1 point
+Provides one of the following: explanation of what the project is about or the type of learning/algorithms or the type of task.
+
+0 points
+Not included in the project
+
+
+Project Topic
+
+Is the goal of the project clearly stated? E.g. why it’s important, what goal the author wants to achieve, or wants to learn. 
+
+
+3 points
+Very Good — clearly states the motivation or the goal for the project
+
+
+1 point
+Needs improvement — attempts but doesn’t get across the motivation or goal for the project
+
+
+0 points
+Not included in the project
+
+
+Data
+
+Is the data source properly cited and described? (including links, brief explanations)
+
+
+
+3 points
+Includes a brief explanation of where the data is from/how it was gathered and if the data is from a public source, cites the dataset using the format of a style manual like APA.
+
+
+0 points
+Does not include a brief explanation of where the data is from/how it was gathered or does not include a citation (using the format of a style manual like APA) for a public dataset
+
+
+Data
+
+Is the data description explained properly? The data description should include the data size.
+
+E.g. for tabulated data: number of samples/rows, number of features/columns, bytesize if a huge file, data type of each feature (or just a summary if too many features- e.g. 10 categorical, 20 numeric features), description of features (at least some key features if too many), whether the data is multi-table form or gathered from multiple data source.
+
+E.g. for images: you can include how many samples, number of channels (color or gray or more?) or modalities, image file format, whether images have the same dimension or not etc.
+
+E.g. sequential data: texts, sound file; please describe appropriate properties such as how many documents or words, how many sound files with typical length (are they the same or variable), etc.
+
+
+6 points
+Describes the data including the data size appropriately for the type of data.
+
+
+3 points
+Partially describes  the data but does not refer to the data size or does not describe the data size appropriately for the type of data.
+
+
+0 points
+Does not include any description of the data or the data size
+
+
+Exploratory Data Analysis
+
+Does it include clear explanations on how and why an analysis (EDA) is performed?
+
+EDA methods can differ by data types or tasks.
+
+E.g. EDA on tabulated data may include: visualization and statistics on selected features, null value checks, identifying data types of each features etc.
+
+E.g. EDA on images is open-ended, and it can be as simple as picking a few samples of images from each class, displaying them, and describing any findings. 
+
+Some more ideas: you could plot histograms of sample images and draw conclusions. You could summarize image similarity by choosing a single metric to compare. The data may or may not have different image sizes, but you could mention if the image sizes are different. Also, you can check the distribution of the range of the pixel intensities. You may also count labels (if multiclass or multilabel classification problem) to see if the labels are skewed, or you can plot a histogram of areas by segmentation labels, etc.
+
+EDA on text/NLP data may include: Word count, word frequency histogram, etc., and it can also include basic data cleaning such as stop words removal to count meaningful words. 
+
+EDA on sound or speech data may involve label count/histogram, visualization on their waveform, the histogram of the length, visualization of their spectrum, etc.
+
+EDA on sequential data such as stock/house price, sensor measurement data, sequence of system logs, etc. may include: Visualization of the time series, smoothing/moving averages, or other relevant visualizations. Depending on the data, one can discuss specific data characteristics such as seasonality or some pattern.
+
+Note: Sometimes, the data type can be multimodal (meaning, mixtures of images, texts, sounds, or tabular format). Score according to relevant EDA methods used for the data type.
+
+
+10 points
+EDA goes above and beyond expectations. Includes both of the following: In addition to exploring the dataset, EDA includes several histograms and/or other types of visualizations.
+
+
+7 points
+EDA meets expectations. Basic EDA with some exploration of the dataset and histograms and/or other visualizations suitable to the data type.  
+
+
+5 points
+EDA does not meet expectations. Missing one of the following: some basic exploration of the dataset or histograms and/or other visualizations suitable to the data type.
+
+
+0 points
+EDA not included or missing both of the following: some basic exploration of the dataset and histograms and/or other visualizations suitable to the data type.
+
+
+Data Preprocessing
+
+Note: There are many possible data types you might see from projects from other people. Below are potential score breakdowns based on data types:
+
+Below are potential score breakdowns based on data types. 
+
+Data preprocessing on tabulated data may include: Removing irrelevant features, null value imputation, resampling, general data cleaning (clean and change string values to numeric values), one-hot encoding (creating dummy variables for multi categorical variables), changing the data representation, reindexing, etc.
+
+Data preprocessing on images may include: Rescaling or scoping images, normalizing/standardizing the pixel values, color filtering/gray scaling if relevant, and data augmentation (rotation, flip, translation, etc.)
+
+Data preprocessing on texts/NLP data may include: Extracting feature vectors from raw texts such as word count tables or word embeddings. There are many word embedding methods, and some can be complex. When you evaluate, don't just base the score on the complexity or performance of the models. Base your score on how the learner demonstrated understanding by explaining concepts, why they chose particular methods/techniques, etc.  
+
+Data preprocessing on speech/sound data (or any data that involves sound) may include: cropping or (random) sampling of waveform data, transforming to spectrums (e.g., power spectrums, discrete Fourier transform, Mel-frequency cepstral coefficients MFCC, etc.)
+
+If the data types are multimodal, please grade them according to the appropriate methods.
+
+The student may use other preprocessing methods for different data types than the ones above. As long as the methods and reasoning make sense, score them appropriately.
+
+In some cases, the data may not need any preprocessing. Then the learner must give a detailed explanation why the data does not need preprocessing (e.g., the original data has been already provided in the processed format and/or preprocessing compromised or did not improve model performance, etc.)
+
+** Note: If the project includes data scraping or pipelining, consider it as data preprocessing.
+
+
+
+10 points
+Data Preprocessing goes above and beyond expectations. Includes all of the following: Data preprocessing procedure is appropriate for the data type and includes several data processing techniques with thorough explanations of concepts and analysis of why they chose particular methods/techniques, etc.
+
+
+8 points
+Data Preprocessing meets expectations. Data preprocessing procedure is appropriate for the data type. Includes the following: includes multiple data preprocessing techniques with explanations of concepts and why they chose particular methods/techniques, etc. 
+
+or 
+
+Single, substantive data preprocessing method with thorough, clear explanation of concepts and why they chose the particular method/technique, etc. 
+
+or 
+
+Learner gives a detailed explanation and analysis of why the data does not need preprocessing (e.g., The original data has already been provided in processed format with explanation of techniques and concepts, preprocessing compromised or did not improve the model performance, etc.)
+
+
+
+6 points
+Data Preprocessing does not meet expectations. Data preprocessing procedure is appropriate for the data type. Includes the following: multiple data preprocessing techniques but the learner is missing clear, detailed explanations of concepts or why they chose particular methods/techniques, etc.
+
+
+3 points
+Data Preprocessing needs improvement. Data preprocessing procedure is appropriate for the data type. Includes the following: single substantive data preprocessing technique, but the learner is missing clear, detailed explanations of concepts or why they chose that particular method or technique.
+
+
+0 points
+Data Preprocessing not included or is not appropriate for data type. 
+
+
+Models
+
+Some questions to consider:
+
+Is the choice of model(s) appropriate for the problem? (E.g., at least one or more unsupervised) for the problem and data.
+
+Explain the general approach.
+
+Used additional unsupervised or supervised models to compare.
+
+ Aware of the time complexity of the particular algorithm and assess the feasibility of the algorithm on the data, choose algorithm(s) based on those assessments.
+
+Does it include reasonings on the choice of optimization methods or training methods? If a specific optimization method or training strategy is an important design choice, it briefly explains what it does or how it works.
+
+One option for the project is to create something that isn't only analysis. E.g., an application using unsupervised algorithms (for example, a functioning web app, recommender system, etc.). Data collection and choosing algorithms/designing the system for actual response times may be more critical than having accurate but slow methods. If building an application-type project, use the following rubric instead:
+
+Implement reasonable data scraping methods or data pipeline
+
+Correctly choose a model (at least one or more unsupervised) for the problem and data.  
+
+Explain the general approach.
+
+Has working application.
+
+Aware of the time complexity and scalability for data pipelines and backend algorithms, design the system accordingly. 
+
+
+25 points
+The Models section exceeds expectations. The choice of model(s) is appropriate for the problem. Includes all of the following: Explains the general approach and uses additional unsupervised or supervised models to compare and aware of time complexity of algorithm, asseses feasibility of algorithm on the data, and chooses algorithm(s) based on those assessments and includes reasonsing on the choice of optimization methods or training methods with brief explanations of what specific optimizaion methods or training strategies do/how they work.
+
+or for application based projects:
+
+Correctly chooses model (at least one unsupervised) for the problem and data. Includes all of the following:
+
+Implement reasonable data scraping methods or data pipeline.
+
+Explains the general approach.
+
+Has working application.
+
+Aware of the time complexity and scalability for data pipelins and backend algorithms, designs the system accordingly.
+
+20 points
+The Models section meets expectations. The choice of model(s) is appropriate for the problem
+
+Includes three of the following: Explains the general approach and uses additional unsupervised or supervised models to compare and aware of time complexity of algorithm, asseses feasibility of algorithm on the data, and chooses algorithm(s) based on those assessments and includes reasonsing on the choice of optimization methods or training methods with brief explanations of what specific optimizaion methods or training strategies do/how they work.
+
+or for application based projects:
+
+Correctly chooses model (at least one unsupervised) for the problem and data. Includes three of the following:
+
+Implement reasonable data scraping methods or data pipeline.
+
+Explains the general approach.
+
+Has working application.
+
+Aware of the time complexity and scalability for data pipelins and backend algorithms, designs the system accordingly.
+
+15 points
+The Models section is below expectations. The choice of model(s) is appropriate for the problem.
+
+Includes two of the following: Explains the general approach and uses additional unsupervised or supervised models to compare and aware of time complexity of algorithm, asseses feasibility of algorithm on the data, and chooses algorithm(s) based on those assessments and includes reasonsing on the choice of optimization methods or training methods with brief explanations of what specific optimizaion methods or training strategies do/how they work.
+
+or for application based projects:
+
+Correctly chooses model (at least one unsupervised) for the problem and data. Includes three of the following:
+
+Implement reasonable data scraping methods or data pipeline.
+
+Explains the general approach.
+
+Has working application.
+
+Aware of the time complexity and scalability for data pipelins and backend algorithms, designs the system accordingly.
+
+
+
+10 points
+The choice of model(s) is NOT appropriate for the problem. 
+
+Includes two of the following: Explains the general approach and uses additional unsupervised or supervised models to compare and aware of time complexity of algorithm, asseses feasibility of algorithm on the data, and chooses algorithm(s) based on those assessments and includes reasonsing on the choice of optimization methods or training methods with brief explanations of what specific optimizaion methods or training strategies do/how they work.
+
+or for application based projects:
+
+Correctly chooses model (at least one unsupervised) for the problem and data. Includes two of the following:
+
+Implement reasonable data scraping methods or data pipeline.
+
+Explains the general approach.
+
+Has working application.
+
+Aware of the time complexity and scalability for data pipelins and backend algorithms, designs the system accordingly.
+
+
+
+5 points
+The choice of model(s) is appropriate for the problem.
+
+Missing all of the following: Explains the general approach and uses additional unsupervised or supervised models to compare and aware of time complexity of algorithm, asseses feasibility of algorithm on the data, and chooses algorithm(s) based on those assessments and includes reasonsing on the choice of optimization methods or training methods with brief explanations of what specific optimizaion methods or training strategies do/how they work.
+
+
+or for application based projects:
+
+Correctly chooses model (at least one unsupervised) for the problem and data. Missing all of the following:
+
+Implement reasonable data scraping methods or data pipeline.
+
+Explains the general approach.
+
+Has working application.
+
+Aware of the time complexity and scalability for data pipelins and backend algorithms, designs the system accordingly.
+
+0 points
+No models attempted or missing all of the following:
+
+The choice of model(s) is appropriate for the problem and explains the general approach and uses additional unsupervised or supervised models to compare and aware of time complexity of algorithm, asseses feasibility of algorithm on the data, and chooses algorithm(s) based on those assessments and includes reasonsing on the choice of optimization methods or training methods with brief explanations of what specific optimizaion methods or training strategies do/how they work.
+
+
+Results and Analysis
+
+Some questions to consider:
+
+Does it have a summary of results and analysis?
+
+Does it have proper visualizations? (E.g., tables, graphs/plots, heat maps, statistics summary with interpretation, etc.)
+
+Does it use different kinds of evaluation metrics properly? Suppose the supervised or unsupervised learning task has more than one possible evaluation metric. In that case, the learner could compare multiple evaluation metrics (e.g., a classification task may use several evaluation metrics other than just accuracy or cross-entropy for better evaluation interpretation). 
+
+Hyperparameter search: Some models may involve hyperparameter search. Students need to describe their hyperparameter procedure. Hyperparameters may exist in the model itself and/or in the optimization objective functions or regularizations. Also, modifications on their data preprocessing may occur during the training and hyperparameter tuning. Result and analysis need to address the final results and any intermediate results and demonstrate the hyperparameter search procedure. If one uses an automatic hyperparameter search tool(s), they must briefly describe how it works and the final results and interpretation.
+
+Did the author compare the results from the multiple models and make appropriate comparisons?
+
+
+30 points
+Results and analysis section exceeds expectations. Includes a summary with basic results and analysis and all of the following: proper visualizations (e.g. tables, graphs/plots, heat maps, statistics summary with interpretation, etc. and uses different kinds of evaluation metrics properly (e.g. compares multiple evaluation metrics) and hyperparameter search (e.g. extensive hyperparameter tuning with description of hyperparameter procedure, demonstrate the search procedure addressing final and intermediate results, describe any automatic hyperparameter search tool(s) with final results and interpretation.) and author compares the results from multiple models and makes appropriate comparisons.
+
+
+
+25 points
+Results and analysis section meets expectations. Includes a summary with basic results and analysis and all of the following: proper visualizations (e.g. tables, graphs/plots, heat maps, statistics summary with interpretation, etc. and uses different kinds of evaluation metrics properly (e.g. compares multiple evaluation metrics) and hyperparameter search (e.g. extensive hyperparameter tuning with description of hyperparameter procedure, demonstrate the search procedure addressing final and intermediate results, describe any automatic hyperparameter search tool(s) with final results and interpretation.)
+
+
+
+15 points
+Results and analysis section does not meet expectations.Includes a summary with basic results and analysis with both of the following: proper visualizations (e.g. tables, graphs/plots, heat maps, statistics summary with interpretation, etc. and uses different kinds of evaluation metrics properly (e.g. compares multiple evaluation metrics).
+
+or Includes a summary with basic results and anlaysis and hyperparameter search (e.g. extensive hyperparameter tuning with description of hyperparameter procedure, demonstrate the search procedure addressing final and intermediate results, describe any automatic hyperparameter search tool(s) with final results and interpretation.)
+
+
+10 points
+Results and analysis section needs improvement. Includes a summary of results and analysis with one of the following:
+
+proper visualizations (e.g. tables, graphs/plots, heat maps, statistics summary with interpretation, etc. or uses different kinds of evaluation metrics properly (e.g. compares multiple evaluation metrics).
+
+
+5 points
+Results and analysis section does not meet expectations. Includes a summary of results and analysis but missing all other components.
+
+
+0 points
+No results or analysis attempted
+
+
+Discussion and Conclusion
+
+
+15 points
+Discussion and conclusion section goes above expectations.
+
+E.g. includes three of the following: discussion of learning and takeaways or discussion of why something didn’t work or suggests ways to improve.
+
+
+10 points
+Discussion and conclusion section meets expectations.
+
+E.g. includes two of the following: discussion of learning and takeaways or discussion of why something didn’t work or suggests ways to improve.
+
+
+5 points
+Discussion and conclusion section needs improvement. E.g. includes one of the following: discussion of learning and takeaways or discussion of why something didn’t work or suggests ways to improve.
+
+
+0 points
+No discussion or conclusion attempted
+
+
+Write-up
+
+Is the write-up organized and clear?
+
+
+5 points
+Yes the write-up is organized and clear
+
+
+0 points
+No the write-up is not organized and clear
+
+
+After reviewing the learner's Jupyter notebook/report, do you have any feedback about their project? E.g. what they did well or things that they could improve on.
+
+​
+Prompt
+Submit Deliverable Two: Video Presentation
+
+Record a video of a presentation or demo of your work. The presentation should be a condensed version as if you're doing a short pitch to advertise your work; so please focus on the highlights:
+
+What problem do you solve?
+
+What ML approach do you use, or what methods does your app use?
+
+Show the result or run an app demo.
+
+The minimum video length is 5 min, the maximum length is 15 min. The recommended length is about 10 min. Submit the video in the .mp4 format.
+
+Spotify_Clustering_Analysis.mp4
+Rubric
+Does the video explain the following?:
+What problem do you solve?
+
+What ML approach do you use, or what methods does your app use?
+
+Show the results or run an app demo.
+
+0 points
+Video presentation not included.
+
+1 point
+Video presentation is not clear or organized, and does not seem to have been rehearsed. Presentation doesn’t follow a logical sequence or give appropriate time to each section. Video does not meet time length requirements
+
+3 points
+Presentation needs improvement. E.g. includes one of the following:  problem the project solves or the ML approach and methods used or shows the results or runs an app demo
+
+7 points
+Average presentation. E.g. includes two of the following: problem the project solves or the ML approach and methods used or shows the results or runs an app demo
+
+10 points
+Excellent presentation. E.g. includes all of the following: problem the project solves and the ML approach and methods used and shows the results or runs an app demo
+
+Is the video clear and organized? Consider the following:
+The presentation follows a logical sequence.
+
+The structure gives appropriate time to each section, so the video is about 10 minutes in length (between 5 and 15 minutes).
+
+The presentation is a well-rehearsed, condensed version that focuses on the highlights.
+
+0 points
+Video presentation not included.
+
+1 point
+Video presentation is not clear or organized, and does not seem to have been rehearsed. Presentation doesn’t follow a logical sequence or give appropriate time to each section. Video does not meet time length requirements
+
+3 points
+Average quality video presentation. E.g. Presentation includes two of the following: follows a logical sequence or gives appropriate time to each section, focusing on the highlights or is well-rehearsed
+
+5 points
+Presentation has very good clarity and organization. E.g. presentation has all of the following: follows a logical sequence and gives appropriate time to each section, focusing on the highlights and is well-rehearsed
+
+After reviewing the learner's video presentation, do you have any feedback about their project? E.g. what they did well or things that they could improve on.
+
+​
+Prompt
+Submit Deliverable Three: GitHub Repository Link
+
+Create a public project GitHub repository with your work (please include the git repo URL in your notebook/report and slides). It is essential that it is public so your peers will be able to access it. This repository needs to be specifically for this project. 
+
+Data by-product: If your project creates data and you want to share, please do not upload the data in git. An excellent way to share would be through a Kaggle dataset or similar. Similarly, please do not upload videos to git- if you want, you can upload to youtube and post those link(s) to your git.
+
+https://github.com/kyle-heller/spotify_clustering_analysis
+Rubric
+Does the project have a public GitHub repository with code specifically for this project?
+
+0 points
+No
+
+5 points
+Yes
+
+Does the code include comments to help you understand the code? E.g. the comments indicate why the code is there or the what/how for tricky code.
+
+0 points
+No
+
+5 points
+Yes
+
+Is the code organized? E.g. The file repository structure makes sense and the code is generally easy to read and follow.
+
+0 points
+No
+
+5 points
+Yes
+
+After reviewing the learner's GitHub repository, do you have any feedback about their project codebase? E.g. what they did well or things that they could improve on. 
+
+​
+Comments
+Comments left for the learner are visible only to that learner and the person who left the comment.
+
+RP
+
+Enter Peer Review comments *
